@@ -64,4 +64,4 @@ def scrape_yt_comments(url, timeit=False):
     if timeit:
         print(time.time() - start1)
 
-Parallel(n_jobs=-1)(delayed(scrape_yt_comments)(url) for url in urls[:2])
+Parallel(n_jobs=-1)(delayed(scrape_yt_comments)(url) for url in urls)
